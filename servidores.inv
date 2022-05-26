@@ -1,2 +1,2 @@
 [servidores]
-ec2-52-87-225-221.compute-1.amazonaws.com
+ec2-52-87-225-221.compute-1.amazonaws.com ansible_ssh_user=ansible   ansible_ssh_pass=q1w2e3r4
