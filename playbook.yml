@@ -1,3 +1,4 @@
+---
 - name: Reiniciando servico apache
   shell: systemctl restart httpd
   args:
