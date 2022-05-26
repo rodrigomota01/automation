@@ -1,7 +1,7 @@
  ---
  - name: servidor apache
-  hosts: servidores
-  become: true
-  tasks:
+   hosts: servidores
+   become: true
+   tasks:
    - name: Stopping apache
      shell: "sudo systemctl stop httpd"
