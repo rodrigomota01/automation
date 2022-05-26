@@ -1,6 +1,5 @@
 ---
-- name: restart apache
-  hosts: servidores
+- hosts: servidores
   become: true
 
   tasks:
