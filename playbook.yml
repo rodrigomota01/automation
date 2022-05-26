@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: restart apache
+  hosts: servidores
   become: true
 
   tasks:
