@@ -1,17 +1,4 @@
----
-- name: restart apache
-  hosts: servidores
-  become: true
-
-  tasks:
-  
-  handlers:
-    - name: Reload Apache
-      service:
-        name: apache2
-        state: reloaded
-
-    - name: Restart Apache
-      service:
-        name: apache2
-        state: restarted
+- name: Reiniciando servico apache
+  shell: systemctl restart httpd
+  args:
+    executable: /bin/bash
