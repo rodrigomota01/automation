@@ -1,6 +1,6 @@
 ---
 - name: restart apache
-  hosts: ec2-52-87-225-221.compute-1.amazonaws.com
+  hosts: servidores
   become: true
 
   tasks:
