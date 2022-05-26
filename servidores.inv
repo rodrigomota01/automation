@@ -1,2 +1,2 @@
 [servidores]
-52.87.225.221 ansible_user=ec2_user
+ec2-52-87-225-221.compute-1.amazonaws.com ansible_user=ec2_user
