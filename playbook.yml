@@ -1,0 +1,11 @@
+---
+- name: restart apache
+  hosts: ec2-52-87-225-221.compute-1.amazonaws.com
+  become: true
+
+  tasks:
+   handlers:
+    - name: Restart Apache
+      service:
+        name: httpd
+        state: restarted
