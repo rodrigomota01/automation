@@ -1,5 +1,14 @@
----
-- name: Reiniciando servico apache
-  shell: systemctl restart httpd
-  args:
-    executable: /bin/bash
+- name: restart httpd
+  hosts: servidores
+  become: true
+  tasks:
+    - name: httpd stop
+      ansible.builtin.service:
+        name: httpd
+        state: stopped
+        enabled: true
+    - name: httpd start
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: true
